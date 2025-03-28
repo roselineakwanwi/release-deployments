@@ -23,7 +23,7 @@ spec:
                     operator: In
                     values:
                       - k8s-worker-node-1
-                      - k8s-worker-node-1
+                      - k8s-worker-node-2
         podAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
             - labelSelector:

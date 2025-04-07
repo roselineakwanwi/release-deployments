@@ -5,7 +5,7 @@ metadata:
   namespace: database
 spec:
   serviceName: mysql
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: mysql
@@ -24,6 +24,7 @@ spec:
                     values:
                       - k8s-worker-node-1
                       - k8s-worker-node-2
+                      - k8s-worker-node-3
         podAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
             - labelSelector:

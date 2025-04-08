@@ -22,9 +22,9 @@ spec:
                   - key: kubernetes.io/hostname
                     operator: In
                     values:
-                      - k8s-worker-node-1
-                      - k8s-worker-node-2
-                      - k8s-worker-node-3
+                      - k8s-worker-node1
+                      - k8s-worker-node2
+                      - k8s-worker-node3
         podAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
             - labelSelector:
